@@ -9,7 +9,8 @@ import AlbumList from './src/components/AlbumList';
 
 //Create a component
 const App = () => (
-  <View>
+  /*Flex 1 allows the component to expand the whole content area.*/
+  <View style={{flex: 1}} >
     <Header headerText={'Music Covers'}/>
     <AlbumList/>
   </View>

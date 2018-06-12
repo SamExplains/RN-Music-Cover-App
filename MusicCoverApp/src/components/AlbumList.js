@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
-import {View, Text} from 'react-native'
+import { ScrollView } from 'react-native'
 import AlbumDetail from './AlbumDetail'
+import MyJSONData from '../MusicCoverJSON/music_cover.json'
 //import axios from 'axios'
+
+console.log(MyJSONData);
 
 class AlbumList extends Component {
   state = {
@@ -34,11 +37,11 @@ class AlbumList extends Component {
   render(){
     console.log(this.state);
     return  (
-      <View>
+      <ScrollView>
         {this.renderAlbums()}
         {/*<Text>Album List!</Text>*/}
         {/*<Text>{this.state.data.body}</Text>*/}
-      </View>
+      </ScrollView>
     );
   }
 }
